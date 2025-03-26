@@ -3,11 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width", initial-scale=1>
-  <meta name="author" content="">
-  <meta name="description" content=" ">
-  <meta name="keywords" content="">
-  <title>Canseco - CS 3 </title>
+  <meta name="viewport" content="width=device-width" initial-scale=1>
+  <meta name="author" content="Happy Birthday Song">
+  <meta name="description" content="Happy Birthday Song">
+  <meta name="keywords" content="Happy Birthday Song">
+  <title>Santos - CS 3 </title>
   <!-- using the w3.css framework to show how predefined css classes can be used inside an html document.  -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <!-- local css property definitions to further enhance the page -->
@@ -29,8 +29,8 @@
 
 
   <header class="w3-container" id="header" > 
-    <h1>Roy Canseco - III-K - Jan 2025</h1>
-    <h2> Birthday </h2>
+    <h1>Mariana Santos - 9-Rb - March 27,2025</h1>
+    <h2> Birthday</h2>
   </header>
 
   <section class="w3-container" id="input"> 
@@ -39,7 +39,7 @@
     <form  id="input_form" method="post" action="/happy" 
         onsubmit="return confirm('Sure to Submit')"
         onreset="return confirm('Sure to Submit')"
-    />
+    >
 
       <div class="w3-row">
         <div class="w3-third w3-panel w3-card w3-margin">
@@ -53,23 +53,25 @@
           <label for="female">Female</label>
         </div>
       
-      <div class="w3-panel w3-third w3-card w3-margin w3-padding"
+      <div class="w3-panel w3-third w3-card w3-margin w3-padding">
       <label for="number"> Number of close family and friends: </label><br>
       <select class="w3-select w3-border" id="number" name="number" onchange="generateGuestFields()">
         <option value="">--Please choose a number--</option>
         <!-- sample use of script to generate choices for a drop-down menu that shows numbers from 1 to 16 -->
         <script>
-          for(let i=1; i<=16; i++ ){
-            document.write(`<option value="${i}"> ${i} </option>`);
-          }
-        </script>
+  for(let i=1; i<=16; i++){ // Ensures at least 16 options (from 17 onwards)
+    document.write(`<option value="${i}">${i}</option>`);
+  }
+</script>
+
+
       </select> <br>
 
       <!-- to submit a form and formatted again using w3.css classess -->
       <!-- clicking on the submit button activates the onsubmit event handler attached to the form tag -->
       <div id="guests">  </div>
         <input class="w3-button w3-black w3-margin" type="submit" value="Submit">
-         <input class="w3-button w3-black w3-margin" type="reset" value="Submit">
+         <input class="w3-button w3-black w3-margin" type="reset" value="Reset">
       </div>
       </div>
       
