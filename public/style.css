@@ -9,9 +9,9 @@ html {
 
 
 body {
-  font-family: arial, san-serif;
-  background-color: cornsilk;
-  color: royalblue
+  font-family: Georgia;
+  background-color: rgb(255, 163, 179);
+  color: rgb(172, 21, 151)
 }
 
 h1,
@@ -19,7 +19,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: cursive;
+  font-family: Trebuchet MS;
 }
 
 th,
@@ -40,12 +40,18 @@ td {
   padding: 20px;
 }
 
-#output {
-  border: 1px solid royalblue;
-  padding: 20px;
-  overflow: scroll;
-  background-color: black;
-  color: white;
+#outputt {
+  white-space: pre-line; /* Ensures line breaks show properly */
+  font-family: 'Courier New', monospace; /* Makes it look more structured */
+  font-size: 18px; /* Adjust font size */
+  color: #1a237e; /* Dark blue color */
+  background: #e3f2fd; /* Light blue background */
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid #0d47a1; /* Darker blue border */
+  display: block;
+  margin-top: 10px;
+  word-wrap: break-word; /* Prevents text from overflowing */
 }
 
 
